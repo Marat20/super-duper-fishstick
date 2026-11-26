@@ -9,7 +9,7 @@ func scanCurrency() float64 {
 	return currency
 }
 
-func converter(num float64, currencyFrom, currencyTo string) float64
+func converter(num float64, currencyFrom, currencyTo string) {}
 
 func main() {
 	const USD_EUR = 0.9
@@ -18,4 +18,7 @@ func main() {
 	EUR_RUB := USD_RUB / USD_EUR
 
 	fmt.Println("result =", EUR_RUB)
+
+	res := scanCurrency()
+	converter(res, "RUB", "EUR")
 }
